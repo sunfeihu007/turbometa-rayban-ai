@@ -138,46 +138,6 @@ Before using TurboMeta, you **MUST** enable developer mode in Meta AI App:
 
 ---
 
-### 🔋 Ray-Ban Meta Battery Upgrade & Repair Service <sup>`📢 Ad`</sup>
-
-> 🇨🇳 **For Users in China**
-
-Many friends in China purchased Ray-Ban Meta smart glasses through overseas shopping, but encountered some frustrations:
-
-- 😤 **Gen1 battery life is too short** - Dies quickly, ruining the experience
-- 😰 **No official after-sales service in China** - Don't know where to get repairs
-- 💸 **Shipping back to US is expensive** - High cost, long wait, uncertain results
-
-**Now there's a solution!** A professional Ray-Ban Meta repair specialist can help you:
-
-✅ **Gen1 → Gen2 Battery Upgrade** - Double your battery life, no more battery anxiety
-✅ **Professional Repair Service** - Fix various hardware issues, bring your glasses back to life
-✅ **Local Support in China** - Never worry about repairs again
-
-#### 📊 Battery Comparison: Why Upgrade?
-
-| | Gen1 Original Battery | Gen2 Upgraded Battery |
-|--|----------------------|----------------------|
-| **Glasses Single Charge** | ~4 hours | **~8 hours** ⚡ |
-
-> 💡 Simply put: **Gen1 with Gen2 battery = Double the battery life**, same glasses, twice the experience!
-
-<table>
-  <tr>
-    <td><img src="./ad/电池更换计划.jpg" width="220"/></td>
-    <td><img src="./ad/更换后的图片.jpg" width="220"/></td>
-  </tr>
-</table>
-
-| Service | Price |
-|---------|-------|
-| Battery Upgrade (Original) | ~~¥299~~ |
-| **Turbo Referral Price** | **¥249** (Save ¥50) |
-
-📱 **Contact**: Add WeChat `lifesux`, mention "**Turbo Referral**" for discount
-
----
-
 ## 📖 Introduction
 
 TurboMeta is a full-featured multimodal AI assistant built exclusively for RayBan Meta smart glasses, powered by Alibaba Cloud's Qwen multimodal AI models:
