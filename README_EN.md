@@ -36,6 +36,7 @@
 
 ### 🆕 Core Features
 
+- 🎬 **RTMP Live Streaming**: Stream to any RTMP platform - YouTube, Twitch, Bilibili, Douyin, TikTok, Facebook Live, etc.
 - 👁️ **Quick Vision**: Siri voice activation - identify objects without unlocking your phone
 - 🤖 **Live AI**: Real-time multimodal AI conversation via glasses camera and microphone
 - 🍽️ **LeanEat**: Take a photo to get nutrition analysis and health scores
@@ -43,7 +44,6 @@
 ### 🌐 Multi-Language & Multi-Platform
 
 - 🌐 **Bilingual Interface**: Full English and Chinese UI support with easy switching
-- 🎬 **RTMP Live Streaming**: Stream to any RTMP platform - YouTube Live, Twitch, Bilibili, Douyin, TikTok, Facebook Live, and more
 - 🔌 **OpenRouter Support**: Access 500+ AI models including GPT-5, Claude 4.5, Gemini 3, and more
 - 🎙️ **Google Gemini Live**: Live AI now supports Google Gemini real-time voice chat (requires non-China network)
 - 🌏 **Alibaba Multi-Region**: Support for Beijing (China mainland) and Singapore (International) endpoints
@@ -136,7 +136,7 @@ Before using TurboMeta, you **MUST** enable developer mode in Meta AI App:
 
 ### 🍎 iOS (Recommended)
 
-> ✅ **Latest Version**: iOS updated to v1.4.0 with RTMP streaming, bilingual UI, OpenRouter, Gemini support
+> ✅ **Latest Version**: iOS updated to v1.3.0 with bilingual UI, OpenRouter, Gemini support
 
 👉 [**Go to Downloads**](https://github.com/Turbo1123/turbometa-rayban-ai/releases)
 
