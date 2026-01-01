@@ -29,7 +29,8 @@ class TTSService: NSObject, ObservableObject {
     // 使用和 OmniRealtimeService 一样的 AVAudioEngine 方式
     private var playbackEngine: AVAudioEngine?
     private var playerNode: AVAudioPlayerNode?
-    private let audioFormat = AVAudioFormat(commonFormat: .pcmFormatInt16, sampleRate: 24000, channels: 1, interleaved: true)
+    // 使用 Float32 标准格式，兼容 iOS 18+
+    private let playbackFormat = AVAudioFormat(standardFormatWithSampleRate: 24000, channels: 1)
     private var isPlaybackEngineRunning = false
 
     private var currentTask: Task<Void, Never>?
@@ -47,15 +48,17 @@ class TTSService: NSObject, ObservableObject {
         playerNode = AVAudioPlayerNode()
 
         guard let playbackEngine = playbackEngine,
-              let playerNode = playerNode else {
+              let playerNode = playerNode,
+              let playbackFormat = playbackFormat else {
             print("❌ [TTS] 无法初始化播放引擎")
             return
         }
 
         playbackEngine.attach(playerNode)
-        playbackEngine.connect(playerNode, to: playbackEngine.mainMixerNode, format: nil)
+        playbackEngine.connect(playerNode, to: playbackEngine.mainMixerNode, format: playbackFormat)
+        playbackEngine.prepare()
 
-        print("✅ [TTS] 播放引擎初始化完成: PCM16 @ 24kHz")
+        print("✅ [TTS] 播放引擎初始化完成: Float32 @ 24kHz")
     }
 
     /// 配置音频会话（需要在启动播放引擎之前调用）
@@ -276,12 +279,12 @@ class TTSService: NSObject, ObservableObject {
 
     private func playAudioChunk(_ audioData: Data) {
         guard let playerNode = playerNode,
-              let audioFormat = audioFormat else {
-            print("⚠️ [TTS] playerNode 或 audioFormat 未初始化")
+              let playbackFormat = playbackFormat else {
+            print("⚠️ [TTS] playerNode 或 playbackFormat 未初始化")
             return
         }
 
-        guard let pcmBuffer = createPCMBuffer(from: audioData, format: audioFormat) else {
+        guard let pcmBuffer = createPCMBuffer(from: audioData, format: playbackFormat) else {
             print("⚠️ [TTS] 无法创建 PCM buffer")
             return
         }
@@ -302,21 +305,26 @@ class TTSService: NSObject, ObservableObject {
     }
 
     private func createPCMBuffer(from data: Data, format: AVAudioFormat) -> AVAudioPCMBuffer? {
-        // 每帧2字节 (PCM16 mono)
+        // 服务器发送的是 PCM16 格式，每帧 2 字节
         let frameCount = data.count / 2
+        guard frameCount > 0 else { return nil }
 
         guard let buffer = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: AVAudioFrameCount(frameCount)),
-              let channelData = buffer.int16ChannelData else {
+              let channelData = buffer.floatChannelData else {
             return nil
         }
 
         buffer.frameLength = AVAudioFrameCount(frameCount)
 
-        // 拷贝 PCM16 数据到缓冲区
+        // 将 PCM16 转换为 Float32（兼容 iOS 18+）
         data.withUnsafeBytes { (bytes: UnsafeRawBufferPointer) in
             guard let baseAddress = bytes.baseAddress else { return }
             let int16Pointer = baseAddress.assumingMemoryBound(to: Int16.self)
-            channelData[0].update(from: int16Pointer, count: frameCount)
+            let floatData = channelData[0]
+            for i in 0..<frameCount {
+                // Int16 范围 -32768 到 32767，转换为 -1.0 到 1.0
+                floatData[i] = Float(int16Pointer[i]) / 32768.0
+            }
         }
 
         return buffer
