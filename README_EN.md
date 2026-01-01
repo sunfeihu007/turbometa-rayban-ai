@@ -13,6 +13,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/Turbo1123/turbometa-rayban-ai)](https://github.com/Turbo1123/turbometa-rayban-ai/releases)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-☕-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/turbo1123)
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](./paypal2.png)
 
 [English](./README_EN.md) | [简体中文](./README.md)
 
@@ -30,11 +31,11 @@
 
 ✅ **iOS v1.5.0** | 📱 **Android v1.4.0** [Download](https://github.com/Turbo1123/turbometa-rayban-ai/releases)
 
-☕ **Enjoying this project?** [**Buy me a coffee**](https://buymeacoffee.com/turbo1123) to support development!
+☕ **Enjoying this project?** [**Buy me a coffee**](https://buymeacoffee.com/turbo1123) or [**PayPal**](./paypal2.png) to support development!
 
 </div>
 
-> ☕ **Enjoying this project?** This is a passion project maintained in my spare time. If it's been helpful to you, consider [**buying me a coffee**](https://buymeacoffee.com/turbo1123) - it really helps keep the project going!
+> ☕ **Enjoying this project?** This is a passion project maintained in my spare time. If it's been helpful to you, consider [**buying me a coffee**](https://buymeacoffee.com/turbo1123) or donate via [**PayPal**](./paypal2.png) - it really helps keep the project going!
 
 ### 🆕 v1.5 New Features
 
@@ -686,17 +687,21 @@ Visit [Alibaba Cloud Model Studio](https://www.alibabacloud.com/zh/product/model
 - 🔀 Fork and contribute code
 - 📢 Share with others
 
-## ☕ Buy Me a Coffee
+## ☕ Support the Project
 
-If this project helps you, consider buying me a coffee! Your support keeps this project alive and growing.
+If this project helps you, consider supporting development! Your support keeps this project alive and growing.
 
 <div align="center">
 
 <a href="https://buymeacoffee.com/turbo1123" target="_blank">
   <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee" height="50"/>
 </a>
+&nbsp;&nbsp;
+<a href="./paypal2.png" target="_blank">
+  <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal" height="50"/>
+</a>
 
-### 👉 [**buymeacoffee.com/turbo1123**](https://buymeacoffee.com/turbo1123) 👈
+### ☕ [**Buy me a coffee**](https://buymeacoffee.com/turbo1123) &nbsp;|&nbsp; 💳 [**PayPal**](./paypal2.png)
 
 </div>
 
