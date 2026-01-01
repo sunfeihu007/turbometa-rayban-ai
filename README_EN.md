@@ -258,7 +258,7 @@ You need to apply for the following Alibaba Cloud APIs:
 1. **Qwen Omni-Realtime API**: For real-time conversations
 2. **Qwen VL-Plus API**: For image recognition and nutrition analysis
 
-👉 [Apply for APIs at Alibaba Cloud Bailian](https://www.aliyun.com/product/bailian) | [Bailian Console](https://bailian.console.aliyun.com/)
+👉 [Apply for APIs at Alibaba Cloud Model Studio](https://www.alibabacloud.com/zh/product/modelstudio) | [Model Studio Console](https://bailian.console.alibabacloud.com/)
 
 ## 🚀 Installation Guide
 
@@ -277,8 +277,8 @@ You need to apply for the following Alibaba Cloud APIs:
 For detailed configuration guide, see 👉 [API Key Configuration](#api-key-config)
 
 Quick steps:
-1. Visit [Alibaba Cloud Bailian](https://www.aliyun.com/product/bailian) to register
-2. Login to [Bailian Console](https://bailian.console.aliyun.com/) → API-KEY Management → Create API Key
+1. Visit [Alibaba Cloud Model Studio](https://www.alibabacloud.com/zh/product/modelstudio) to register
+2. Login to [Model Studio Console](https://bailian.console.alibabacloud.com/) → API-KEY Management → Create API Key
 3. Enter your API Key in App "Settings" → "API Key Management"
 
 ### Step 3: Build the Project
@@ -661,10 +661,10 @@ This project is based on Meta DAT SDK sample code and follows the original proje
 ⚠️ **Important Notice**: Users need to configure Alibaba Cloud API Key:
 
 #### Step 1: Register Alibaba Cloud Account
-Visit [Alibaba Cloud Bailian](https://www.aliyun.com/product/bailian) to register
+Visit [Alibaba Cloud Model Studio](https://www.alibabacloud.com/zh/product/modelstudio) to register
 
 #### Step 2: Get API Key
-1. Login to [Bailian Console](https://bailian.console.aliyun.com/)
+1. Login to [Model Studio Console](https://bailian.console.alibabacloud.com/)
 2. Find "**API-KEY Management**" in the left menu
 3. Click "**Create API Key**" to generate a key
 4. Copy the generated API Key
